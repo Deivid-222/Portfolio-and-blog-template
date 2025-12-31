@@ -68,7 +68,7 @@
     <title>My favorite frameworks</title>
   </head>
 
-  <body>
+  <body class="overflow-x-hidden">
     <header>
       <!-- GitHub link -->
       <a
@@ -95,26 +95,34 @@
       </a>
 
       <!-- Side clouds -->
-      <img
-        src="/assets/img/clouds.png"
-        alt="clouds"
-        class="big:block absolute top-100 left-230 -z-10 hidden h-150 w-200 rotate-12 opacity-30"
-      />
-      <img
-        src="/assets/img/clouds.png"
-        alt="clouds"
-        class="big:block absolute top-10 left-15 hidden h-150 w-200 rotate-120 opacity-30"
-      />
-      <img
-        src="/assets/img/clouds.png"
-        alt="clouds"
-        class="big:block absolute bottom-10 left-15 hidden h-100 w-100 opacity-30"
-      />
-      <img
-        src="/assets/img/clouds.png"
-        alt="clouds"
-        class="big:block absolute right-50 bottom-70 hidden h-145 w-100 -rotate-30 opacity-30"
-      />
+      <div class="relative">
+        <img
+          src="/assets/img/clouds.png"
+          alt="clouds"
+          class="absolute top-120 right-2 -z-10 block h-auto rotate-12 opacity-30"
+        />
+      </div>
+      <div class="relative w-3xl">
+        <img
+          src="/assets/img/clouds.png"
+          alt="clouds"
+          class="big:block absolute top-10 right-250 hidden h-150 w-200 rotate-120 opacity-30"
+        />
+      </div>
+      <div class="relative">
+        <img
+          src="/assets/img/clouds.png"
+          alt="clouds"
+          class="big:block absolute top-220 right-260 hidden h-65 w-100 opacity-30"
+        />
+      </div>
+      <div class="relative">
+        <img
+          src="/assets/img/clouds.png"
+          alt="clouds"
+          class="big:block absolute top-100 left-235 hidden h-145 w-100 -rotate-30 opacity-30"
+        />
+      </div>
 
       <!-- Image and titles -->
       <img
