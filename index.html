@@ -1,7 +1,7 @@
 <!doctype html>
 <html
   lang="es"
-  class="via mx-auto min-h-dvh max-w-xl bg-blue-300 bg-linear-to-t from-blue-100 to-blue-600"
+  class="mx-auto min-h-dvh max-w-xl bg-blue-300 bg-linear-to-t from-blue-100 to-blue-600"
 >
   <head>
     <!-- Meta tags -->
@@ -26,6 +26,14 @@
       type="image/png"
       sizes="16x16"
       href="/assets/img/favicon 16x16.png"
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/Candy%20Planet.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
     <link rel="stylesheet" href="./assets/css/output.css" />
@@ -65,10 +73,15 @@
     />
     <meta property="og:image" content="/assets/img/frameworks-template.png" />
 
+    <meta
+      name="ahrefs-site-verification"
+      content="c0e1f93f2845c8cc790a4f9915ea8dbbd2b2f0404b24551854fa027609e9d863"
+    />
+
     <title>My favorite frameworks</title>
   </head>
 
-  <body class="overflow-x-hidden">
+  <body>
     <header>
       <!-- GitHub link -->
       <a
@@ -77,7 +90,7 @@
         aria-label="Link to github project"
         target="_blank"
         rel="noopener noreferrer nofollow"
-        class="animate-pulse-fade-in absolute top-5 right-5 z-10 flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 font-medium text-white shadow-md transition-all duration-300 hover:bg-gray-700"
+        class="animate-pulse-fade-in absolute top-5 right-5 z-10 flex gap-2 rounded-lg bg-gray-900 px-4 py-2 font-medium text-white shadow-md transition-all duration-300 hover:bg-gray-700"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -97,29 +110,38 @@
       <!-- Side clouds -->
       <div class="relative">
         <img
-          src="/assets/img/clouds.png"
+          src="/assets/img/clouds.webp"
           alt="clouds"
+          width="800"
+          height="600"
           class="absolute top-120 right-2 -z-10 block h-auto rotate-12 opacity-30"
+          fetchpriority="high"
         />
       </div>
       <div class="relative w-3xl">
         <img
-          src="/assets/img/clouds.png"
+          src="/assets/img/clouds.webp"
           alt="clouds"
+          width="800"
+          height="600"
           class="big:block absolute top-10 right-250 hidden h-150 w-200 rotate-120 opacity-30"
         />
       </div>
       <div class="relative">
         <img
-          src="/assets/img/clouds.png"
+          src="/assets/img/clouds.webp"
           alt="clouds"
+          width="800"
+          height="600"
           class="big:block absolute top-220 right-260 hidden h-65 w-100 opacity-30"
         />
       </div>
       <div class="relative">
         <img
-          src="/assets/img/clouds.png"
+          src="/assets/img/clouds.webp"
           alt="clouds"
+          width="800"
+          height="600"
           class="big:block absolute top-100 left-235 hidden h-145 w-100 -rotate-30 opacity-30"
         />
       </div>
@@ -127,6 +149,8 @@
       <!-- Image and titles -->
       <img
         src="./assets/img/cloud-image-header.webp"
+        width="1920"
+        height="1080"
         alt="Clouds in the sky"
         class="h-96 mask-radial-from-60% mask-radial-to-80% mask-radial-at-center object-cover"
       />
@@ -138,7 +162,7 @@
           My favorite frameworks
         </h1>
         <h2
-          class="xs:text-lg font-display mt-3.5 mb-4 rounded-full border bg-blue-700/50 p-3 text-xs text-white shadow-lg"
+          class="xs:text-lg font-rounded mt-3.5 mb-4 rounded-full border bg-blue-700/50 p-3 text-xs leading-tight text-white shadow-lg"
         >
           They make me feel in a cloud
         </h2>
@@ -150,14 +174,14 @@
       <section>
         <div class="flex justify-center gap-10">
           <a
-            class="to frameworks-buttons bg-purple-700 bg-linear-to-bl from-purple-300"
+            class="frameworks-buttons bg-purple-700 bg-linear-to-bl from-purple-300"
             href="https://astro.build/"
             target="_blank"
             title="Astro"
             aria-label="Astro"
             rel="noopener noreferrer nofollow"
           >
-            <svg width="40" height="40">
+            <svg width="35" height="35">
               <use xlink:href="./assets/svg/sprite.svg#astro" />
             </svg>
           </a>
@@ -169,13 +193,13 @@
             aria-label="Tailwind"
             rel="noopener noreferrer nofollow"
           >
-            <svg width="40" height="40">
+            <svg width="35" height="35">
               <use xlink:href="./assets/svg/sprite.svg#tailwind" />
             </svg>
           </a>
         </div>
         <p
-          class="text-favorite xs:text-lg font-display mt-6 text-center text-xs font-extrabold text-balance"
+          class="text-darkblue xs:text-lg font-rounded mt-6 text-center text-xs font-extrabold text-balance"
         >
           These frameworks have helped me a lot to create web pages in a simple
           and efficient way!
@@ -183,7 +207,7 @@
       </section>
 
       <!-- Applications used during learning -->
-      <section class="my-2 mt-11 w-full">
+      <section class="my-2 mt-10 w-full">
         <h2
           class="xs:text-xl font-dis flex justify-center text-sm font-extrabold text-white"
         >
@@ -196,7 +220,7 @@
             title="Spotify"
             aria-label="Spotify"
             rel="noopener noreferrer nofollow"
-            class="to group animate-pulse-fade-in relative col-span-2 flex min-h-35 flex-col items-start overflow-hidden rounded-2xl bg-green-600 bg-linear-to-br from-blue-300 p-5 shadow-xl shadow-blue-400 transition hover:scale-110 hover:contrast-150"
+            class="group animate-pulse-fade-in relative col-span-2 flex min-h-35 flex-col items-start overflow-hidden rounded-2xl bg-green-600 bg-linear-to-br from-blue-300 p-5 shadow-xl shadow-blue-400 transition hover:scale-110 hover:contrast-150"
           >
             <span
               class="xs:text-2xl xs:left-60 absolute text-lg font-bold text-white transition-transform group-hover:-translate-y-2.5"
@@ -242,7 +266,7 @@
             title="Brave"
             aria-label="Brave"
             rel="noopener noreferrer nofollow"
-            class="to group animate-pulse-fade-in relative col-span-1 mt-1 mr-5 flex min-h-35 flex-col items-start overflow-hidden rounded-2xl bg-orange-600 bg-linear-to-br from-orange-300 p-5 shadow-xl shadow-blue-400 transition hover:scale-110 hover:contrast-150"
+            class="group animate-pulse-fade-in relative col-span-1 mt-1 mr-5 flex min-h-35 flex-col items-start overflow-hidden rounded-2xl bg-orange-600 bg-linear-to-br from-orange-300 p-5 shadow-xl shadow-blue-400 transition hover:scale-110 hover:contrast-150"
           >
             <span
               class="xs:text-2xl absolute text-xl font-bold text-white transition-transform group-hover:-translate-y-2.5"
@@ -265,7 +289,7 @@
             title="Visual Studio Code"
             aria-label="Visual Studio Code"
             rel="noopener noreferrer nofollow"
-            class="to group animate-pulse-fade-in relative col-span-2 mt-1 flex min-h-35 flex-col items-start overflow-hidden rounded-2xl bg-blue-800 bg-linear-to-br from-blue-300 p-5 shadow-xl shadow-blue-400 transition hover:scale-110 hover:contrast-150"
+            class="group animate-pulse-fade-in relative col-span-2 mt-1 flex min-h-35 flex-col items-start overflow-hidden rounded-2xl bg-blue-800 bg-linear-to-br from-blue-300 p-5 shadow-xl shadow-blue-400 transition hover:scale-110 hover:contrast-150"
           >
             <span
               class="xs:text-2xl xs:left-60 absolute text-xl font-bold text-white transition-transform group-hover:-translate-y-2.5"
@@ -286,7 +310,7 @@
     </main>
     <footer>
       <!-- Creator -->
-      <span class="font-display xs:text-base mt-20 flex justify-center text-xs">
+      <span class="font-rounded xs:text-base mt-32 flex justify-center text-xs">
         Made with dedication by David G.A
       </span>
     </footer>

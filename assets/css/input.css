@@ -15,7 +15,7 @@
 /* Personalized classes */
 @theme {
   /* Color */
-  --color-favorite: rgb(20, 28, 145);
+  --color-darkblue: rgb(20, 28, 145);
 
   /*Breackpoint*/
   --breakpoint-xs: 600px;
@@ -23,10 +23,10 @@
   --breakpoint-big: 2200px;
 
   /* Font */
-  --font-display: "Candy Planet", sans-serif, system-ui;
+  --font-rounded: "Candy Planet", sans-serif, system-ui;
 }
 
 /* Set of classes in one */
 .frameworks-buttons {
-  @apply xs:size-20 animate-rotational-wave flex size-14 items-center justify-center rounded-full p-4 shadow-lg shadow-blue-600 transition-transform hover:scale-120 hover:contrast-150;
+  @apply xs:size-18 animate-rotational-wave flex size-14 items-center justify-center rounded-full p-4 shadow-lg shadow-blue-600 transition-transform hover:scale-120 hover:contrast-150;
 }
