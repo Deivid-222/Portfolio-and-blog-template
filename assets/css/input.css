@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Animations */
+@plugin "@midudev/tailwind-animations";
+
+/* Import local font */
+@font-face {
+  font-family: "Candy Planet";
+  src: url("/assets/fonts/Candy Planet.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+/* Personalized classes */
+@theme {
+  /* Color */
+  --color-darkblue: rgb(20, 28, 145);
+
+  /*Breackpoint*/
+  --breakpoint-xs: 600px;
+  --breakpoint-mini: 350px;
+  --breakpoint-big: 2200px;
+
+  /* Font */
+  --font-rounded: "Candy Planet", sans-serif, system-ui;
+}
+
+/* Set of classes in one */
+.frameworks-buttons {
+  @apply xs:size-18 animate-rotational-wave flex size-14 items-center justify-center rounded-full p-4 shadow-lg shadow-blue-600 transition-transform hover:scale-120 hover:contrast-150;
+}

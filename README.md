@@ -1,8 +1,3 @@
-
-
-
-https://github.com/user-attachments/assets/fd9ebcdf-1fcc-4816-8ce2-de6044db171a
-
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
